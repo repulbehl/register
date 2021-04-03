@@ -1,0 +1,81 @@
+<apex:page standardStylesheets="false" showHeader="false" sidebar="false" controller="log">
+<html>
+<head>
+    <title>log in  SIFT here </title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"></link>
+    <apex:stylesheet value="{!$Resource.registrationtwo}"/>
+    
+</head>
+<body>
+
+ <div class="container register">
+            <div class="row">
+                <div class="col-md-3 register-left">
+                    <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                    <h3>Welcome</h3>
+                    <p>You are 30 seconds away from buying and sellimg car !</p>
+                    <input type="submit" name="" value="Login"/><br/>
+                </div>
+                <div class="col-md-9 register-right">
+                  
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">Apply as a buyer </h3>
+                            <apex:form >
+                            <apex:pageBlock > 
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <apex:inputText value="{!a}" id="theTextInput" styleclass="form-control" />
+                                        <label for="First name ">First name </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <apex:inputText value="{!b}" id="theTextInput" styleclass="form-control" />
+                                        <label for="Last name ">Last name </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <apex:inputSecret value="{!f}" id="theSecretInput" styleclass="form-control"  />
+                                        <label for="Password">Password</label>
+                                    </div>
+                                    <div class="form-group">
+                                       <apex:inputText value="{!d}" id="theTextInput" styleclass="form-control" />
+                                        <label for="Adress">Adress</label>
+                                    </div>
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                       <apex:inputText value="{!e}" id="theTextInput" styleclass="form-control" />
+                                        <label for="e-mail"> Email </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <apex:inputText value="{!c}" id="theTextInput" styleclass="form-control" />
+                                        <label for="Phone-No."> Phone No. </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <apex:inputSecret value="{!g}" id="theSecretInput" styleclass="form-control"  />
+                                        <label for="Cnfirm-Password">Confirm-Password</label>
+                                    </div>
+                                   
+                                    <input type="submit" class="btnRegister"  value="Register"/>
+                                </div>
+                            </div>
+                            </apex:form >
+                            </apex:pageBlock > 
+                        </div>              
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</body>
+</html>
+</apex:page>
+                                        
+
